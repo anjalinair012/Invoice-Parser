@@ -1,0 +1,16 @@
+issuer: Apurva Corporate Advisors Private Limited
+category: 94J
+keywords:
+- APURVA CORPORATE ADVISORS PRIVATE LIMITED
+fields:
+  invoice_number: 'Ref.\sNo.\s:(\w+\/\d+)'
+  date: 'Date.?\,?\s([\d\/]+)'
+  price: 'TOTAL\s+([\d,]+)'
+  amount: 'TOTAL\s+([\d,]+)'
+
+options:
+  currency: INR
+  remove_whitespace: false
+  date_formats: dd\mm\Y
+  date_change: dd1mm1Y
+  input_module: pdftotext

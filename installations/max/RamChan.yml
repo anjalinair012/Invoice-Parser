@@ -1,0 +1,17 @@
+issuer: Ramanjaneya Channamsetti
+category: 94J
+keywords:
+- Ramanjaneya Channamsetti
+fields:
+  invoice_number: 'Invoice\s#\s+(\d+)'
+  date: 'Date\s+(\d\d-\d\d-\d{4})'
+  price: 'Total\s+INR\s+([\d,.]+)'
+  sub_amount: 'Total\s+INR\s+([\d,.]+)'
+  amount: 'Total\s+INR\s+([\d,.]+)'
+
+options:
+  currency: INR
+  remove_whitespace: false
+  date_formats: dd-mm-Y
+  input_module: pdftotext
+

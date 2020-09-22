@@ -1,0 +1,15 @@
+issuer: Devendra Dahiya & Co
+category: 94J
+keywords:
+- Devendra Dahiya & Co
+fields:
+  invoice_number: 'ROAD,?\s(\d+)'
+  date: '(\d\d-\w+-\d{4})'
+  price: '\d+\s?;\s([\d,.]+)'
+  gst: 'IGST\s([\d,.]+)'
+
+options:
+  currency: INR
+  remove_whitespace: false
+  date_formats: dd/mm/Y
+  input_module: pdfocr

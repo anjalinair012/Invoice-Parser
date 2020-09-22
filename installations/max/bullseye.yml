@@ -1,0 +1,18 @@
+issuer: Bullseye Advisors
+category: 94J
+keywords:
+- Bullseye Advisors
+fields:
+  invoice_number: 'Invoice\snumber\s:\s+([A-z\d/]+)'
+  date: 'Invoice\sDate:\s+(\d\d-\w+-\d+)'
+  price: 'Subtotal\s+([\d,]+)'
+  cgst: 'CGST\s?@\s?\d+%\s+([\d,]+)'
+  sgst: 'SGST\s?@\s?\d+%\s+([\d,]+)'
+  sub_amount: 'Total\s+([\d,]+)'
+  amount: 'Total\s+([\d,]+)'
+
+options:
+  currency: INR
+  remove_whitespace: false
+  date_formats: dd/mm/Y
+  input_module: pdftotext

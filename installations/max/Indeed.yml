@@ -1,0 +1,15 @@
+issuer: Indeed India Opeartion Private Limited
+category: 94J
+keywords:
+- Invoice | Indeed.com
+fields:
+  invoice_number: 'Invoice\s#:\s([\d]+)'
+  date: '[^Due]\sDate:\s(\d{2}\/\d{2}\/\d{4})'
+  price: 'Total\sprice:\sRs\.([\d,.]+)'
+  gst: 'SAC:\d+\s+([\d,.]+)'
+  amount: 'Total\sAmount\s+([\d,.]+)'
+options:
+  currency: INR
+  remove_whitespace: false
+  date_formats: dd/mm/Y
+  input_module: pdftotext

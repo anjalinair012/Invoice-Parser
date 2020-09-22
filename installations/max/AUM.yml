@@ -1,0 +1,16 @@
+issuer: Aum Legal Advisors Pvt Ltd
+category: 94J
+keywords:
+- AUM LEGAL ADVISORS PVT. LTD.
+fields:
+  invoice_number: 'Ref\.\sNo\.\s:(AUM\/\d+)'
+  date: ['Date\s*:\s*(\d+)','Date\s*:\s*(\d\d\/\d\d\/\d{4})']
+  price: 'TOTAL\s+([\d.]+)'
+  amount: 'TOTAL\s+([\d.]+)'
+
+options:
+  currency: INR
+  remove_whitespace: false
+  date_formats: dd/mm/Y
+  date_change: dd1mm1Y
+  input_module: pdftotext

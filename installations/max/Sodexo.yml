@@ -1,0 +1,18 @@
+issuer: Sodexo SVC India Private Limited
+category: 94C
+keywords:
+- Sodexo SVC India Private Limited
+- Meal Card Pass
+fields:
+  invoice_number: 'Invoice\sNo\s*:-?\s?([\dA-Z]+)'
+  date: 'Invoice\sDate\s?:-?\s?(\d\d?-[A-Z]+-\d\d)'
+  price: 'Total\sAmount\s+(\d+)'
+  gst: 'Add\sIntegrated\sTax@\s\d+%\s+([\d.,]+)'
+  sub_amount: 'Total\sAmount\s\(INR\):-\s+(\d+)'
+  amount: 'Total\sAmount\s\(INR\):-\s+(\d+)'
+
+options:
+  currency: INR
+  remove_whitespace: false
+  date_formats: dd/mm/Y
+  input_module: pdftotext

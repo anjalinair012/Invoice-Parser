@@ -1,0 +1,16 @@
+issuer: KDP Services
+category: 94J
+keywords:
+- KDP Services
+fields:
+  invoice_number: 'Invoice\s+#\s*(INV-\d{4}-\d{4}\s\d+)'
+  date: 'Due\sDate\s:\s+(\d+[a-z]+\s[A-Za-z]+\s\d{4})'
+  price: 'Amount\n*\s+\d+\s+\d+\s+\d+\s+(\d+)'
+  gst: 'IGST\s+\d+%\s+(\d+)'
+  amount: 'Total\s+INR\s+(\d+)'
+
+options:
+  currency: INR
+  remove_whitespace: false
+  date_formats: dd[a-z]{2} B Y
+  input_module: pdftotext
