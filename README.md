@@ -1,23 +1,20 @@
-README
 
 Included:
-All invoices (invoice\{month_name}\)
-this README
+Sample invoices (invoice\{month_name}\)
 InvoiceParser.py
 Output excel (payments.xlsx) 
 
 Python Version 3.7.6
 OS: Windows
 
-How to install Invoice Parser:
+To install Invoice Parser:
 run install.cmd 
 install tesseract from "https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w32-setup-v5.0.0-alpha.20200328.exe" and add the location for "Tesseract-OCR" folder to you System PATH variable
 packages "poppler" and "tesseract" must be added to your system Path variable. 
 	"poppler" is at "C:\Program Files\poppler-0.68.0_x86\poppler-0.68.0\bin" 
 	Please check your "tesseract" location as this was installed manually. It would usually be "C:\Program Files (x86)\Tesseract-OCR".
-The parser is configured
 
-How to run the parser:
+To run the parser:
 Double click run.cmd
 
 Adding new Invoices:
